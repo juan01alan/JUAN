@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Diário de Obra</title>
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="./css/main.css">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
@@ -104,7 +104,7 @@
       </button>
       <div class="relative flex-1">
         <textarea class="w-full resize-none rounded-lg border-gray-300 dark:border-gray-700 bg-background-light dark:bg-gray-800 text-gray-800 dark:text-gray-200 placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary pr-12 text-base" placeholder="Descreva o progresso de hoje..." rows="1"></textarea>
-        <button class="absolute right-2 top-1/2 -translate-y-1/2 flex size-10 items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90">
+        <button id="sendMessageBtOperator" class="absolute right-2 top-1/2 -translate-y-1/2 flex size-10 items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90">
           <span class="material-symbols-outlined">send</span>
         </button>
       </div>
@@ -129,5 +129,7 @@
   }
 </script>
 
+<script type="module" src="./javascript/firebase.mjs"></script>
+<script src="./javascript/backEndHandle.mjs" type="module"></script>
 </body>
 </html>

@@ -40,12 +40,16 @@ function addOperators() {
     operatorsList.push(newName);
 
 }
+function viewOperator() {
+    return operatorsList;
+}
 document.addEventListener("DOMContentLoaded", () => {
     const botaoSalvar = document.querySelector("header button"); // botão do topo “Salvar”
-    const botaoListaOperator = document.getElementById("submitnewoperator");
+    
+    const botaoListaOperator = document.getElementById("submitOperator");
     //por algum motivo isso abaixo n funciona
-    //botaoSalvar.addEventListener("click", ()=>{addOperators()});
-    botaoSalvar.addEventListener("click", () => {
+    botaoListaOperator.addEventListener("click", ()=>{addOperators()});
+    /*botaoSalvar.addEventListener("click", () => {
         console.log("🟦 Iniciando coleta de dados...");
 
         // Lista de IDs a serem coletados
@@ -59,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
             "cpfcnpjcliente",
             "emailcliente",
             "whatsappcliente"
-        ];
+        ];*/
 
-        let dadosColetados = {};
+        /*let dadosColetados = {};
 
         campos.forEach(id => {
             const elemento = document.getElementById(id);
@@ -78,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         console.log(`📌 Campo coletado: Operators → Valor: "${operatorsList}"`);
         console.log("🟩 Coleta finalizada! Dados obtidos:");
-        console.log(dadosColetados);
+        console.log(dadosColetados);*/
     });
-});
+
+export {viewOperator};
