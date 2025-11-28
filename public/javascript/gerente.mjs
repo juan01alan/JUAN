@@ -85,4 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(dadosColetados);*/
     });
 
+    //FUNÇÃO PARA ENVIAR EMAIL PROS OPERADORES INFORMANDO O ACESSO
+
 export {viewOperator};
